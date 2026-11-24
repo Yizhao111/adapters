@@ -120,6 +120,8 @@ uv run geoprobe --data-root /path/to/frozen/data --output-dir datasets/geoprobe 
 
 Not run. `parity_experiment.json` is intentionally empty; the repository validator will report its unmet parity requirement. Oracle checks and fake-provider transport checks must not be reported as model parity.
 
+Adapter tracking: [WIP PR #145](https://github.com/harbor-framework/adapters/pull/145). Dataset-registration and Hugging Face parity PRs have not been opened yet.
+
 | Agent | Model | Metric | Runs | Dataset Size | Original (mean ± SEM) | Harbor (mean ± SEM) |
 | --- | --- | --- | --- | --- | --- | --- |
 
