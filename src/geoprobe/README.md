@@ -164,6 +164,8 @@ Record the actual configuration and secret-free native traces. Original-side sco
 
 The sanitized [oracle summary](validation/oracle-summary.json) and [169-attempt ledger](validation/oracle-attempts.json) record the 168 scored tasks and one retained infrastructure failure. The ledger includes hashes of original result/metric/reward files; complete job folders are retained locally pending artifact-upload coordination. These files contain neither source images nor reference answers. They are oracle evidence, not parity results.
 
+A re-audit on 2026-11-24 is available as a [rendered CLI output image](validation/oracle-cli-output.png), with the [actual captured transcript](validation/oracle-cli-output.txt) and [command/hash provenance](validation/oracle-cli-output-provenance.json). This is a text rendering of a successful audit command, not a native terminal-window screenshot or a new Docker/model run. Maintainer acceptance of this alternative visual evidence is pending.
+
 - All 168 distinct tasks completed Harbor/Docker oracle replay at their native primary-metric optimum; no missing cases or scoring failures. One Docker-daemon outage was recovered in a separate, identical oracle task, with the original failed attempt retained.
 - Thirteen local tests passed, including all 168 reference answers, malformed submissions, sparse metric denominators, source-file checksums, isolation, deterministic generation, and native failure classification.
 - The native agent completed a full Harbor trial against a local fake provider: observe/yield, exactly two image attachments with matching JPEG bytes/order, submit, artifact transfer, and independent grading. This used no paid model.
